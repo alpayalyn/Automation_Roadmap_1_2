@@ -1,15 +1,15 @@
-while True:
+while True: #sürekli çalışmasın
 
 
-    exit = input("Type Y if you want to end the programme or N")
+    exit = input("Type Y if you want to end the programme or N") 
 
     if(exit == "Y"):
 
         break
 
-    elif(exit == "N"):
+    elif(exit == "N"): #else
 
-        Numberinserted = int(input("Please insert a number which consists of 2 digits:"))
+        Numberinserted = int(input("Please insert a number which consists of 2 digits:")) #camelCase
 
         def sayiAtama(Numberinserted):
 
@@ -23,7 +23,7 @@ while True:
 
         def sayiOkunusu(Numberinserted):
 
-            number = Numberinserted
+            number = Numberinserted #tek variable, silelim
 
             numList = [int(digit) for digit in str(number)]
 
@@ -35,9 +35,9 @@ while True:
 
             demet1 = {1: "bir", 2: "iki", 3: "üç", 4: "dört", 5: "beş", 6: "altı", 7: "yedi", 8: "sekiz", 9: "dokuz"}
             onlar = demet1[numList[1]]
-
+            #variable isimlerini düzeltelim
             print("{} {}".format(birler, onlar))
 
         sayiAtama(Numberinserted)
-
+            #refactor yapalım
 
